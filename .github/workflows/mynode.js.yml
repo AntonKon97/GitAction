@@ -20,9 +20,6 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
   
     steps:
-    - name: Set PowerShell execution policy
-  run: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-  shell: pwsh
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
